@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Праздничное поздравление</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="main-wrapper">
+    <header>
+        <h1 id="headerTitle" onclick="toggleHeaderColor()">С 8 Марта!</h1>
+        <p id="currentDate"></p>
+    </header>
+
+    <div class="content-box">
+        <div class="interactive-flower" onclick="changeFlowerColor()">
+            <div class="pot"></div>
+            <div class="stem"></div>
+            <div class="flower-head" id="flowerHead"></div>
+        </div>
+        <p class="hint">Нажми на цветок, чтобы изменить его цвет</p>
+    </div>
+
+    <div class="greeting-form-container">
+        <h2>Персональное поздравление</h2>
+        <form name="greetingForm" onsubmit="return showGreeting(event)">
+            <label for="userName">Введите ваше имя:</label>
+            <input type="text" id="userName" name="userName" placeholder="Например: Елизавета">
+            <button type="submit">Получить открытку</button>
+        </form>
+    </div>
+
+    <div id="resultCard" class="result-card hidden">
+        <h3 id="greetingText"></h3>
+        <p>Желаем весеннего настроения, улыбок и счастья!</p>
+        
+        <div class="slider-wrapper">
+            <div class="slide-window">
+                <img id="slideImage" src="" alt="Поздравительная открытка">
+            </div>
+        </div>
+        <button onclick="closeGreeting()" style="margin-top: 15px; background-color: #666;">Закрыть</button>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
