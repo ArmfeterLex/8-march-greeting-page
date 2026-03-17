@@ -2,6 +2,8 @@
 
 Интерактивная веб-страница для поздравления с 8 Марта на чистом HTML, CSS и JavaScript.
 
+<img width="1831" height="1031" alt="8 March Greeting Page" src="https://github.com/user-attachments/assets/91fa5366-3de1-4d07-83b9-e7edf4901b29" />
+
 ## Функциональность
 
 ### 🎨 Интерактивные элементы
